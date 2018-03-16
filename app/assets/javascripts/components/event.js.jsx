@@ -4,7 +4,7 @@ var Event = createReactClass({
     return (
       <div>
         <h3>{this.props.event.title}</h3>
-        <p>{this.props.event.event_time}</p>
+        <p>{formatDate(this.props.event.event_time)}</p>
       </div>
     );
   }
