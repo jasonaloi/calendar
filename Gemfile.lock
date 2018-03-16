@@ -118,7 +118,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    react-rails (2.4.4)
+    react-rails (2.3.1)
       babel-transpiler (>= 0.7.0)
       connection_pool
       execjs
@@ -182,7 +182,7 @@ DEPENDENCIES
   pg (~> 0.18)
   puma (~> 3.0)
   rails (~> 5.0.1)
-  react-rails
+  react-rails (= 2.3.1)
   sass-rails (~> 5.0)
   slim
   spring

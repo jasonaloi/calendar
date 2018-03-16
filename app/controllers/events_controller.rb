@@ -6,8 +6,12 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.create(event_params)
-    redirect_to :root
+    @event = Event.new(event_params)
+    if @event.save
+      render json: @event
+    else
+      render json: @event.errors, status: :unprocessable_entity
+    end
   end
 
   private
